@@ -16,5 +16,5 @@ def test_is_adult():
 
 def test_is_not_adult():
   assert not is_adult(10)
-  
+  assert not is_adult(3)
   
