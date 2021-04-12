@@ -13,3 +13,8 @@ def test_is_adult():
   assert result
   assert is_adult(20)
   
+
+def test_is_not_adult():
+  assert not is_adult(10)
+  
+  
