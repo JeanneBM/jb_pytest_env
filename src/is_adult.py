@@ -1,2 +1,2 @@
 def is_adult (age: int) -> bool:
-  pass
+  return age >= 18
