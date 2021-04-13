@@ -1,6 +1,6 @@
 '''
 
-Print testing:
+how to test print():
 capsys - special variable appears during the program
 out, err = capsys.readouterr() - returns tuple -> an output or an error
 
