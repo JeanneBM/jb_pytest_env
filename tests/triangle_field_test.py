@@ -6,8 +6,6 @@ out, err = capsys.readouterr() - returns tuple -> an output or an error
 
 '''
 
-from src.triangle_field import get_triangle_field
-
 def triangle_field_test(capsys):
     # try
     base = 10
