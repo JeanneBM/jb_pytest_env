@@ -1,12 +1,12 @@
-class bank_test:
+class BankTest:
     def test_create_bank(self):
-        bank_test1 = bank()
+        bank_test1 = Bank()
         assert bank_test1.amount == 0
-        assert isinstance(bank_test1, bank)
+        assert isinstance(bank_test1, Bank)
 
     def add_money_test(self):
         # given
-        bank_test1 = bank()
+        bank_test1 = Bank()
 
         # when
         bank_test1.add_money(100)
@@ -16,7 +16,7 @@ class bank_test:
 
     def add_money_twice_test(self):
         # given
-        bank_test1 = bank()
+        bank_test1 = Bank()
 
         # when
         bank_test1.add_money(100)
@@ -27,7 +27,7 @@ class bank_test:
 
     def withdraw_money_test(self):
         # given
-        bank_test1 = bank()
+        bank_test1 = Bank()
         bank_test1.add_money(100)
 
         # when

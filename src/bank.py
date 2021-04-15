@@ -1,4 +1,4 @@
-class bank:
+class Bank:
     def __init__(self):
         self.amount = 0
 
