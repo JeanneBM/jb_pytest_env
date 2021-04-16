@@ -7,5 +7,5 @@ class NotEnoughCash(Exception):
 class BankTest2:
     def withdraw_over_amount_test(self):
         with pytest.raises(NotEnoughCash):
-            bank = Bank()
-            bank.withdraw_money(500)
+            bank_test2 = Bank2()
+            bank_test2.withdraw_money(500)
