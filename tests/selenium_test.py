@@ -1,5 +1,9 @@
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver import FirefoxOptions
 
-driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+opts = FirefoxOptions()
+opts.add_argument("--headless")
+browser = webdriver.Firefox(firefox_options=opts)
+
+browser.get('http://google.com')
 
