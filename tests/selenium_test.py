@@ -1,9 +1,8 @@
 from selenium import webdriver
-from selenium.webdriver import FirefoxOptions
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
-opts = FirefoxOptions()
-opts.add_argument("--headless")
-browser = webdriver.Firefox(firefox_options=opts)
+binary = FirefoxBinary('path/to/installed firefox binary')
+browser = webdriver.Firefox(firefox_binary=binary)
 
 browser.get('http://google.com')
 
