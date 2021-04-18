@@ -1,14 +1,32 @@
 language: python
 python: 3.8
 
+addons:
+  firefox: "latest"
+  
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/virtualenv/python3.8.7/lib/python3.8/site-packagess
+  
 before_install:
   - sudo apt-get update
   - sudo apt-get install python3
   - sudo apt-get install python-pip
   - pip install pytest
+  - pip install selenium
   - pip install coverage
+  - pip install pyvirtualdisplay selenium
+  
+  - wget https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux32.tar.gz
+  - mkdir $HOME/geckodriver 
+  - tar -xzf geckodriver-v0.21.0-linux32.tar.gz
+  - export PATH=$HOME/geckodriver:$PATH
+
+
   
 script:
+
    - python3 -m pytest
    - coverage run -m pytest
    - coverage report 2>&1 
