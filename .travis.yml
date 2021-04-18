@@ -19,7 +19,7 @@ before_install:
   
   - wget https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux32.tar.gz
   - mkdir $HOME/geckodriver 
-  - tar xvf /tmp/geckodriver.tar.gz -C $HOME/geckodriver
+  - tar -xzf geckodriver-v0.21.0-linux32.tar.gz
   - export PATH=$HOME/geckodriver:$PATH
 
 
