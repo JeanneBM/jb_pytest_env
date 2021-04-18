@@ -1,3 +1,4 @@
+'''
 from pyvirtualdisplay import Display
 from selenium import webdriver
 
@@ -8,3 +9,4 @@ browser = webdriver.Firefox(home/geckodriver)
 browser.get('http://www.python.org')
 
 browser.close()
+'''
