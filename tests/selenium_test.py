@@ -7,6 +7,5 @@ display.start()
 
 browser = webdriver.Firefox(home/geckodriver)
 browser.get('http://www.python.org')
-
-browser.close()
 '''
+browser.close()
