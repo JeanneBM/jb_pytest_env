@@ -8,5 +8,5 @@ display.start()
 browser = webdriver.Firefox()
 #browser.get('http://www.python.org')
 
-browser.close()
+#browser.close()
 '''
